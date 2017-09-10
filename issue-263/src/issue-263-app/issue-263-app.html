@@ -1,0 +1,38 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="./firebase-query.html">
+
+<dom-module id="issue-263-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+
+    <firebase-query path="/test" data="{{data}}"></firebase-query>
+    <firebase-query path="/test" data="{{data}}"></firebase-query>
+
+    <template is="dom-repeat" items="[[data]]">
+      [[item.value]]
+    </template>
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class Issue263App extends Polymer.Element {
+      static get is() { return 'issue-263-app'; }
+      static get properties() {
+        return {
+          data: {
+            type: Array
+          }
+        };
+      }
+    }
+
+    window.customElements.define(Issue263App.is, Issue263App);
+  </script>
+</dom-module>

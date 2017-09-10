@@ -1,0 +1,13 @@
+{
+  "name": "issue-263",
+  "description": "Tries to replicate issue-263 problem",
+  "main": "index.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^2.0.0",
+    "polymerfire": "tjmonsi/polymerfire#^2.2.0"
+  },
+  "devDependencies": {
+    "web-component-tester": "Polymer/web-component-tester#^6.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "issue-263",
+  "short_name": "issue-263",
+  "description": "Tries to replicate issue-263 problem",
+  "start_url": "/",
+  "display": "standalone"
+}
